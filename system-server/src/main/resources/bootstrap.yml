@@ -5,7 +5,7 @@ spring:
     name: system-server
   cloud:
     config:
-      label: conf
+      label: system
       discovery:
         enabled: true
         service-id: config-server
@@ -13,5 +13,8 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://user:123456@localhost:8080/eureka/      #����ע�����ŵ�ַ������BASIC��֤���û���������
+ribbon:
+  eureka:
+    enable: true
 #instance:
 #  prefer-ip-address: true         #��IPע�ᵽ����ע������
