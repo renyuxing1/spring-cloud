@@ -3,6 +3,12 @@ server:
 spring:
   application:
     name: system-server
+  cloud:
+    config:
+      label: conf
+      discovery:
+        enabled: true
+        service-id: config-server
 eureka:
   client:
     serviceUrl:

@@ -11,6 +11,9 @@
 
     <artifactId>cloud-discovery</artifactId>
     <name>cloud-discovery</name>
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -24,6 +27,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 

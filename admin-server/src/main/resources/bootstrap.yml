@@ -5,6 +5,12 @@ server:
 spring:
   application:
     name: admin-server
+  cloud:
+    config:
+      label: conf
+      discovery:
+        enabled: true
+        service-id: config-server
 eureka:
   client:
     serviceUrl:

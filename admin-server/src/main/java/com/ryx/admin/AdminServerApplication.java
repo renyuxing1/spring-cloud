@@ -23,6 +23,7 @@ public class AdminServerApplication {
     public Student getStudent(){
         Student student = new Student();
         System.out.println(port+"+++++++++++++++++=================");
+
         return student;
     }
 

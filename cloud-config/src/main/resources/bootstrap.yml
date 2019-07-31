@@ -3,6 +3,13 @@ server:
 spring:
   application:
     name: config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: classpath:/conf/
 eureka:
   client:
     serviceUrl:
